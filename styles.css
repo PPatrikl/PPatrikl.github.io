@@ -1,4 +1,4 @@
-/* styles.css */
+
 body {
     margin: 0;
     padding: 0;
@@ -7,19 +7,22 @@ body {
     background: url('taustakuva.png') no-repeat center center fixed;
     background-size: cover;
     color: white;
+    display: flex; /* Enable flexbox for the body */
+    flex-direction: column; /* Arrange items vertically */
+    min-height: 100vh; /* Ensure body takes up full viewport height */
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center; /* Center content vertically */
     align-items: center;
-    height: 100vh;
-    padding-top: 50px;
+    flex-grow: 1; /* Allow container to grow and fill available space */
+    padding: 50px; /* Add some padding around the content */
 }
 
 h1 {
-    font-size: 25px;
+    font-size: 48px;
     margin-bottom: 20px;
 }
 
@@ -29,6 +32,12 @@ h1 {
     text-align: justify;
     margin-bottom: 30px;
     line-height: 1.6;
+}
+
+.buttons { /* Added a container for the buttons */
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    margin-bottom: 30px; /* Add space below buttons */
 }
 
 .buttons button {
@@ -43,18 +52,20 @@ h1 {
 }
 
 .contacts {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
     background: rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 5px;
-    text-align: left;
+    text-align: left; /* Align text to the left within the contacts box */
     font-size: 14px;
     line-height: 1.8;
+    margin-top: auto; /* Push contacts to the bottom */
+    width: fit-content; /* Adjust width to fit content */
+    margin-left: auto; /* Align to right */
+    margin-right: auto; /* Align to right */
+    margin-bottom: 20px; /* Add margin at the bottom */
 }
 
 .contacts p {
     margin: 5px 0;
-    white-space: pre-line;
+    white-space: pre-line; /* Maintain line breaks */
 }
