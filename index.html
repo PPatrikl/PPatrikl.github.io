@@ -1,38 +1,61 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retkeily</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif; /* Ensure the font matches other pages */
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retkeily</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Varmistetaan, että fontti asetetaan myös tässä */
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Retkeilyn perusteet</h1>
-        <nav>
-            <ul class="buttons">
-                <li><button onclick="window.location.href='index.html'">Etusivu</button></li>
-                <li><button onclick="window.location.href='varusteet.html'">Varusteet</button></li>
-                <li><button onclick="window.location.href='ruoka.html'">Ruoka</button></li>
-                <li><button onclick="window.location.href='reitit.html'">Reitit</button></li>
-            </ul>
-        </nav>
-        <p class="intro">Retkeily on monelle meille luontoon ja ulkoilmaan suuntautuva matka, joka voi olla niin lyhyt päiväretki kuin pidempi vaellususeita päivinä. Se on täydellinen tapa nauttia luonnon rauhasta, irrottautua arjesta ja nauttia aktiivisesta elämäntavasta. Retkeily tarjoaa mahdollisuuden tutustua erilaisiin maastoihin, maisemiin ja eläimistöön sekä kehittää omia taitojaan ulkona olemisessa ja selviytymisessä luonnon varassa.
-        Retkeily voi olla myös itsensä haastamista, sillä vaikka reitit voivat olla kauniita ja rauhallisia, ne voivat myös sisältää vaikeita maastoja ja sääolosuhteita, jotka vaativat hyvää suunnittelua ja valmistautumista. Tässä oppaassa käsittelemme retkeilyn perusteita: varusteet, reittivinkit ja ruokailu luonnossa.</p>
-        <div class="contacts">
-            <h2>Yhteystiedot</h2>
-            <p>Sähköposti: retkeily2025@hotmaili.fi</p>
-            <p>Puhelin: 040 123 4567</p>
-            <p>Instagram: @retkeily2025</p>
-            <p>Lähteet: Partioitta ja tekoäly</p>
-        </div>
+  <div class="container">
+    <!-- Navigaatio -->
+    <nav>
+      <!-- Hamburger-ikoni näkyy vain pienillä näytöillä -->
+      <div class="menu-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="varusteet.html">Varusteet</a></li>
+        <li><a href="ruoka.html">Ruoka</a></li>
+        <li><a href="reitit.html">Reitit</a></li>
+      </ul>
+    </nav>
+
+    <h1>Retkeilyn perusteet</h1>
+    <p class="intro">
+      Retkeily on monelle meille luontoon ja ulkoilmaan suuntautuva matka, joka voi olla niin lyhyt päiväretki kuin pidempi vaellususeita päivinä. Se on täydellinen tapa nauttia luonnon rauhasta, irrottautua arjesta ja nauttia aktiivisesta elämäntavasta. Retkeily tarjoaa mahdollisuuden tutustua erilaisiin maastoihin, maisemiin ja eläimistöön sekä kehittää omia taitojaan ulkona olemisessa ja selviytymisessä luonnon varassa.
+      Retkeily voi olla myös itsensä haastamista, sillä vaikka reitit voivat olla kauniita ja rauhallisia, ne voivat myös sisältää vaikeita maastoja ja sääolosuhteita, jotka vaativat hyvää suunnittelua ja valmistautumista. Tässä oppaassa käsittelemme retkeilyn perusteita: varusteet, reittivinkit ja ruokailu luonnossa.
+    </p>
+
+    <div class="contacts">
+      <h2>Yhteystiedot</h2>
+      <p>Sähköposti: retkeily2025@hotmaili.fi</p>
+      <p>Puhelin: 040 123 4567</p>
+      <p>Instagram: @retkeily2025</p>
+      <p>Lähteet: Partioitta ja tekoäly</p>
     </div>
-    <script src="script.js"></script>
+  </div>
+
+  <!-- JavaScript hamburger-menun toimintoa varten -->
+  <script>
+    function toggleMenu() {
+      var navLinks = document.querySelector('.nav-links');
+      if (navLinks.style.display === "flex") {
+        navLinks.style.display = "none";
+      } else {
+        navLinks.style.display = "flex";
+      }
+    }
+  </script>
 </body>
 </html>
