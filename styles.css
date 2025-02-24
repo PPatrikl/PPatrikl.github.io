@@ -27,7 +27,8 @@ h1 {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 0px;
+    order: 2;
 }
 
 .intro {
@@ -36,6 +37,7 @@ h1 {
     text-align: justify;
     margin-bottom: 30px;
     line-height: 1.6;
+    order: 3;
 }
 
 .buttons button {
