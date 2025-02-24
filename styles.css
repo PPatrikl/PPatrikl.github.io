@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     text-align: center;
-    background: url('taustakuva.png') no-repeat center center fixed;
+    background: url('./taustakuva.png') no-repeat center center fixed;
     background-size: cover;
     color: white;
 }
