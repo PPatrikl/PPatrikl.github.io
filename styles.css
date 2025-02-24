@@ -25,6 +25,7 @@ h1 {
 
 .buttons {
     margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .intro {
@@ -55,4 +56,9 @@ h1 {
     border-radius: 5px;
     text-align: left;
     font-size: 14px;
+    line-height: 1.8;
+}
+
+.contacts p {
+    margin: 5px 0;
 }
