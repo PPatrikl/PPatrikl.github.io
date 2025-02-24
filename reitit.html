@@ -5,6 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reitit</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .content {
+            max-width: 700px;
+            margin: 0 auto; /* Center content */
+            font-size: 22px;
+            line-height: 1.8;
+            text-align: left;
+            padding: 20px; /* Add padding for smaller screens */
+            width: 100%; /* Ensure content scales with window size */
+        }
+        .intro-list {
+            padding-left: 20px;
+        }
+        .intro-list li {
+            margin-bottom: 15px;
+        }
+        .image-container {
+            float: right;
+            margin: 20px; /* Adjust margin for smaller screens */
+        }
+        .image-container img {
+            width: 700px; /* Set larger fixed width */
+            height: auto;
+            display: block;
+        }
+        .image-container p { 
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+            .content {
+                font-size: 18px;
+                padding: 10px; /* Adjust padding for smaller screens */
+            }
+            .image-container {
+                float: none;
+                margin: 0 auto; /* Center image container */
+                text-align: center;
+            }
+            .image-container img {
+                width: 100%; /* Ensure image scales with window size */
+            }
+            .image-container p {
+                font-size: 20px;
+            }
+        }
+        .spacer {
+            height: 100px; /* Add more empty space */
+        }
+        .map-link {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .map-link:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -13,10 +76,31 @@
                 <li><button onclick="window.location.href='index.html'">Etusivu</button></li>
                 <li><button onclick="window.location.href='varusteet.html'">Varusteet</button></li>
                 <li><button onclick="window.location.href='ruoka.html'">Ruoka</button></li>
+                <li><button onclick="window.location.href='reitit.html'">Reitit</button></li>
             </ul>
         </nav>
-        <h1>Reitit</h1>
-        <p class="intro">Hello World</p>
+        <h1>Reittivinkit ja kohteet</h1>
+       
+
+       
+        <div class="content">
+            <p class="intro">Suunnittelu on avain onnistuneeseen retkeilykokemukseen. Hyvä reittisuunnitelma takaa sen, että retkesi on turvallinen ja nautit siitä täysillä. Tässä muutamia vinkkejä ja kohteita, jotka voivat inspiroida sinua.</p>
+            <ul class="intro-list">
+                <li><strong>Kansallispuistot ja luontopolut:</strong> Suomessa on monia upeita kansallispuistoja, kuten Nuuksion kansallispuisto ja Oulangan kansallispuisto, joissa on hyvin hoidettuja reittejä eri tasoisille retkeilijöille. Reitit vaihtelevat kevyistä luontopoluista pitkiin vaellusreitteihin. Näissä paikoissa voit kokea monenlaista maastoa ja nähdä kauniita järviä, metsiä ja soita.</li>
+                <li><strong>Päiväretket ja viikonloppuvaellukset:</strong> Jos haluat kokeilla retkeilyä, mutta et ole valmis monen päivän vaellukseen, voi lähialueen päiväretki olla täydellinen valinta. Voit valita vaivattoman reitin ja palata illaksi kotiin. Esimerkiksi Repoveden kansallispuisto tarjoaa useita lyhyitä, mutta erittäin kauniita reittejä, jotka vievät sinut luonnon keskelle.</li>
+                <li><strong>Vaellusreittejä eri tasolle:</strong> Jos taas haaveilet pidemmästä vaelluksesta, voit suunnata johonkin Suomen tunnetuista vaellusreiteistä, kuten Karhunkierrokselle tai Lemmenjoen kansallispuiston reiteille. Nämä reitit voivat kestää useita päiviä, mutta ne tarjoavat ikimuistoisia elämyksiä ja upeita luonnonmaisemia.</li>
+                <li><strong>Vuodenajan merkitys retkellä:</strong> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non provident, sunt in culpa qui official deserunt mollit anim id est laborum</li>
+            </ul>
+        </div>
+        <div class="image-container"> 
+                <img src="leirikuva.png" alt="leirikuva"> 
+        </div>
+
+        <iframe src="https://retkikartta.fi/embedded/karttaID" width="300" height="1300" style="border: 1px;;"></iframe>
+     
+
+      
     </div>
 </body>
+</html>
 </html>
