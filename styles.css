@@ -176,6 +176,20 @@ body {
     }
   }
 
+  iframe {
+    width: 38%;
+    height: 90vh;
+    min-height: 500px; /* Varmistaa, että kartta ei ole liian matala */
+    min-width: 463px; /* Varmistaa, että kartta ei ole liian kapea */
+  
+    border: none;
+}
+
+
+
+  
+  
+
   
   
   /* Muiden elementtien tyylimäärittelyjä voit lisätä tähän tarpeen mukaan */
