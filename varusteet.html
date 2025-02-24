@@ -6,14 +6,14 @@
     <title>Varusteet</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        
         .content {
             max-width: 700px;
-            margin: 0;
-            margin-left: -800px;
+            margin: 0 auto; /* Center content */
             font-size: 22px;
             line-height: 1.8;
             text-align: left;
+            padding: 20px; /* Add padding for smaller screens */
+            width: 100%; /* Ensure content scales with window size */
         }
         .intro-list {
             padding-left: 20px;
@@ -23,11 +23,10 @@
         }
         .image-container {
             float: right;
-            margin-right: -900px;
-            margin-top: -500px;
+            margin: 20px; /* Adjust margin for smaller screens */
         }
         .image-container img {
-            width: 350px;
+            width: 350px; /* Set fixed width */
             height: auto;
             display: block;
         }
@@ -36,11 +35,35 @@
             font-weight: bold;
             margin-bottom: 10px;
         }
+        @media (max-width: 768px) {
+            .content {
+                font-size: 18px;
+                padding: 10px; /* Adjust padding for smaller screens */
+            }
+            .image-container {
+                float: none;
+                margin: 0 auto; /* Center image container */
+                text-align: center;
+            }
+            .image-container img {
+                width: 350px; /* Maintain fixed width */
+            }
+            .image-container p {
+                font-size: 20px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <button class="back-button" onclick="window.location.href='index.html'">Takaisin</button>
+        <nav>
+            <ul class="buttons">
+                <li><button onclick="window.location.href='index.html'">Etusivu</button></li>
+                <li><button onclick="window.location.href='varusteet.html'">Varusteet</button></li>
+                <li><button onclick="window.location.href='ruoka.html'">Ruoka</button></li>
+                <li><button onclick="window.location.href='reitit.html'">Reitit</button></li>
+            </ul>
+        </nav>
         <h1>Retkeilyvarusteet</h1>
         <div class="content">
             <p class="intro">Oikeat varusteet ovat avain onnistuneeseen retkeilyyn. Riippuen retken kestosta ja maastosta, varustelistat voivat vaihdella. On kuitenkin olemassa joitakin perusasioita, jotka ovat aina tarpeen.</p>
