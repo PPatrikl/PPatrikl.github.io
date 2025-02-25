@@ -183,7 +183,43 @@ body {
     min-width: 463px; /* Varmistaa, että kartta ei ole liian kapea */
   
     border: none;
+
+    
 }
+#ruokakuva {
+  width: 30vw !important; /* Kuva täyttää 60% selainikkunan leveydestä */
+  height: auto !important; /* Säilyttää oikeat mittasuhteet */
+  max-width: 100%; /* Varmistaa, ettei kuva mene yli näytön koosta */
+  display: block;
+  margin: 0 auto; /* Keskittää kuvan */
+}
+
+/* Kun selainikkuna on alle 1024px leveä, kuva täyttää koko ruudun */
+@media (max-width: 1024px) {
+  #ruokakuva {
+      width: 100% !important; /* Kuva muuttuu koko ruudun levyiseksi */
+  }
+}
+
+
+
+
+#leirikuva {
+  width: 60vw !important; /* Kuva täyttää 60% selainikkunan leveydestä */
+  height: auto !important; /* Säilyttää oikeat mittasuhteet */
+  max-width: 100%; /* Varmistaa, ettei kuva mene yli näytön koosta */
+  display: block;
+  margin: 0 auto; /* Keskittää kuvan */
+}
+
+/* Kun selainikkuna on alle 1024px leveä, kuva täyttää koko ruudun */
+@media (max-width: 1024px) {
+  #leirikuva {
+      width: 100% !important; /* Kuva muuttuu koko ruudun levyiseksi */
+  }
+}
+
+
 
 
 
