@@ -205,7 +205,7 @@ body {
 
 
 #leirikuva {
-  width: 60vw !important; /* Kuva täyttää 60% selainikkunan leveydestä */
+  width: 80vw !important; /* Kuva täyttää 60% selainikkunan leveydestä */
   height: auto !important; /* Säilyttää oikeat mittasuhteet */
   max-width: 100%; /* Varmistaa, ettei kuva mene yli näytön koosta */
   display: block;
@@ -218,6 +218,24 @@ body {
       width: 100% !important; /* Kuva muuttuu koko ruudun levyiseksi */
   }
 }
+
+
+
+.hero-section {
+  background: url('leirikuva.png') no-repeat center center;
+  background-size: cover;
+  height: 60vh; /* Leirikuvan korkeus */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+
+
+
 
 
 
