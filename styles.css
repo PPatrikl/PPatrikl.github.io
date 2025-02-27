@@ -105,7 +105,11 @@ body {
       margin: 40px auto; /* Keskitetään sisältö */
       clear: both;
   }
-
+}
+  .contacts p {
+    margin: 5px 0;
+    white-space: pre-line;
+  }
   
   /* Muut napit (esim. etusivu, varusteet jne.) */
   .buttons {
