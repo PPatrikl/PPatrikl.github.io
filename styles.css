@@ -82,7 +82,7 @@ body {
     width: 100%;
   }
   .contacts {
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     left: 20px;
     background: rgba(0, 0, 0, 0.5);
@@ -97,6 +97,17 @@ body {
     margin: 5px 0;
     white-space: pre-line;
   }
+
+  /* Mobiilinäkymän säätö */
+@media (max-width: 768px) {
+  .contacts {
+      position: relative; /* Poistaa kiinteän sijoituksen mobiilissa */
+      bottom: auto;
+      left: auto;
+      margin: 20px auto; /* Keskittää laatikon */
+      width: 90%; /* Skaalaa mobiiliin sopivaksi */
+  }
+}
   
   /* Muut napit (esim. etusivu, varusteet jne.) */
   .buttons {
