@@ -82,7 +82,7 @@ body {
     width: 100%;
   }
   .contacts {
-    position: fixed;
+    position: absolute;
     bottom: 20px;
     left: 20px;
     background: rgba(0, 0, 0, 0.5);
@@ -93,19 +93,15 @@ body {
     line-height: 1.8;
     width: auto;
   }
-  .contacts p {
-    margin: 5px 0;
-    white-space: pre-line;
-  }
-
-  /* Mobiilinäkymän säätö */
+/* Mobiililaitteet: Yhteystiedot pysyvät tekstin alla */
 @media (max-width: 768px) {
   .contacts {
-      position: relative; /* Poistaa kiinteän sijoituksen mobiilissa */
+      position: relative; /* Poistaa kiinteän sijoituksen */
       bottom: auto;
       left: auto;
-      margin: 20px auto; /* Keskittää laatikon */
+      margin: 20px auto; /* Varmistaa, että se pysyy keskitettynä */
       width: 90%; /* Skaalaa mobiiliin sopivaksi */
+      max-width: none;
   }
 }
   
