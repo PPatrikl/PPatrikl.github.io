@@ -238,18 +238,12 @@ body {
   background: url('leirikuva.png') no-repeat center center;
   background-size: cover;
   height: 60vh; /* Leirikuvan korkeus */
-  width: 100vw; /* Leirikuvan leveys */
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   text-align: center;
-}
-@media (max-width: 768px) {
-  .hero-section {
-      height: 100vh; /* Tekee yläosan koko ruudun korkuiseksi mobiilissa */
-      background-size: contain; /* Varmistaa, että kuva näkyy kokonaan */
-  }
 }
 
 
