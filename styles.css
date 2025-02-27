@@ -93,17 +93,19 @@ body {
     line-height: 1.8;
     width: auto;
   }
-/* Mobiililaitteet: Yhteystiedot pysyvät tekstin alla */
+
+  /* Mobiililaitteilla siirretään yhteystiedot tekstin alle */
 @media (max-width: 768px) {
   .contacts {
-      position: relative; /* Poistaa kiinteän sijoituksen */
+      position: relative;  /* Poistetaan absolute, jotta se siirtyy normaalisti muiden alle */
       bottom: auto;
       left: auto;
-      margin: 20px auto; /* Varmistaa, että se pysyy keskitettynä */
-      width: 90%; /* Skaalaa mobiiliin sopivaksi */
+      width: 90%;
       max-width: none;
+      margin: 40px auto; /* Keskitetään sisältö */
+      clear: both;
   }
-}
+
   
   /* Muut napit (esim. etusivu, varusteet jne.) */
   .buttons {
