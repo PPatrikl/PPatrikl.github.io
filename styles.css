@@ -27,6 +27,7 @@ body {
     display: none; /* Näytetään vain pienillä näytöillä */
     flex-direction: column;
     cursor: pointer;
+    z-index: 1100;
   }
   .menu-icon span {
     background: white;
